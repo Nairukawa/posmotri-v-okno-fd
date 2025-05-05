@@ -64,7 +64,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 22px;
   width: 100%;
   height: 100%;
 }
@@ -72,7 +72,7 @@ ol {
 .search-form {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: end;
   gap: 40px;
 }
 
@@ -80,6 +80,10 @@ ol {
   position: relative;
   height: 298px;
   overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .result__video-container {
@@ -93,6 +97,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list {
@@ -127,14 +132,15 @@ ol {
 
 .search-form__fieldset-title {
   font-size: 18px;
-  font-weight: normal;
-  font-family: "Fira Sans Condensed";
+  font-style: normal;
+  font-family: "Fira Sans Condensed" sans-serif;
 }
 
 .title {
   font-family: "Oswald";
   font-size: 75px;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   line-height: 94%;
   text-transform: uppercase;
 }
@@ -149,8 +155,9 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald";
-  font-weight: bold;
+  font-family: "Oswald" sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
@@ -166,6 +173,7 @@ ol {
 }
 
 .content__card-link_current {
+  display: block;
   background-color: #545050;
 }
 
@@ -197,11 +205,18 @@ ol {
 
 .search-form__fieldset {
   border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 17px;
+}
+
+.search-form__checkbox {
+  appearance: none;
 }
 
 .search-form__label {
@@ -216,8 +231,10 @@ ol {
   border-bottom: 1px solid #fff;
   border-left: none;
   border-right: none;
+  font-family: "Fira Sans Condensed" sans-serif;
   font-size: 18px;
-  background-color: transparent;
+  font-weight: 400;
+  background-color: inherit;
   color: #fff;
   appearance: none;
 }
@@ -233,7 +250,7 @@ ol {
   position: relative;
   width: 18px;
   height: 18px;
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -254,12 +271,13 @@ ol {
 }
 
 .button {
-  height: 34px;
+  min-height: 34px;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
+  font-family: "Fira Sans Condensed" sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
 }
 
