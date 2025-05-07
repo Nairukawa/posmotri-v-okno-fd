@@ -79,8 +79,7 @@ ol {
 .content__list-container {
   position: relative;
   height: 298px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -172,10 +171,10 @@ ol {
 .content__video-card-description {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
-  line-height: 1.62;
   font-weight: 400;
   font-style: normal;
   line-clamp: 4;
+  line-height: 16.2px;
 }
 
 .content__card-link_current {
